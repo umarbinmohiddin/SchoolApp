@@ -1,0 +1,43 @@
+﻿@model IList<schoolApp.Entities.Subject>
+@{
+    ViewData["Title"] = "SubjectsList";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<h1>SubjectsList</h1>
+
+  <div class="row">
+        <table class="table table-striped">
+             <thead class="thead-dark">
+                    <tr>
+                        <th>
+                           SubjectId
+                        </th>
+                        <th>
+                            SubjectName
+                        </th>
+                      
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+            @*// here Model is representing list of studentDetails*@
+            @foreach (var subject in Model)
+            {
+                      <tr>
+                          <td>
+                        @subject.SubjectId
+                          </td>
+                          <td>
+                        @subject.SubjectName
+                          </td>
+                     
+                      </tr>
+
+            }
+                </tbody>
+
+        </table>
+    </div>
+
