@@ -50,7 +50,7 @@ namespace schoolApp.WebAPI.Controllers
                 {
                     foreach (var subject in studentEntity.StudentSubjects)
                     {
-                        subjectIds.Add(subject.SubjectId);
+                        subjectIds.Add(subject.SubjectId);   
                     }
                 }
 
